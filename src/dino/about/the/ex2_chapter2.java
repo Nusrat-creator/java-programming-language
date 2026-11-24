@@ -5,35 +5,35 @@ public class ex2_chapter2 {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
 
-        IO.println("Please enter the breed:");
+        System.out.println("Please enter the breed:");
         String breed = scanner.nextLine().trim();
 
-        IO.println("PLease enter the height:");
+        System.out.println("PLease enter the height:");
         float height = scanner.nextFloat();
 
-        IO.println("PLease enter the length:");
+        System.out.println("PLease enter the length:");
         float length = scanner.nextFloat();
 
-        IO.println("PLease enter the weight:");
+        System.out.println("PLease enter the weight:");
         float weight = scanner.nextFloat();
 
-        IO.println("PLease enter the age:");
+        System.out.println("PLease enter the age:");
         int age = scanner.nextInt();
 
-        IO.println("PLease enter the name:");
+        System.out.println("PLease enter the name:");
         String name = scanner.nextLine().trim();
 
-        IO.println("PLease enter the whether it is omnivours or not:");
+        System.out.println("PLease enter the whether it is omnivours or not:");
         String answer = scanner.nextLine().trim();
 
         if(answer.equals("Yes")){
-            IO.println("the dino is omnivours");
+            System.out.println("the dino is omnivours");
         }
         else{
-            IO.println("It is not omnivours");
+            System.out.println("It is not omnivours");
         }
 
-        IO.println("the breed: %s, the height:%f,the length:%f,the weight:%f,the name:%s,the age:%d ".formatted(breed,height,length,weight,name,age));
+        System.out.println("the breed: %s, the height:%f,the length:%f,the weight:%f,the name:%s,the age:%d ".formatted(breed,height,length,weight,name,age));
     }
 
 }
