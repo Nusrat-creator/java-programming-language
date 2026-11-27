@@ -14,6 +14,9 @@ public class exercise_summary7 {
         dino_age_calc(age);
         LocalTime current_time = LocalTime.now();
         is_it_open(current_time);
+        String name_wrokers = " Salam";
+        int age_of_workers = 35;
+        greetings(name_wrokers,age_of_workers);
     }
 
     public static void printLifeStage(int age) {
@@ -48,6 +51,9 @@ public class exercise_summary7 {
             System.out.println("no");
             return false;
         }
+    }
+    public static void greetings(String name,int age_of){
+        System.out.println("Greetings,%s and age is %d".formatted(name,age_of));
     }
 }
 
